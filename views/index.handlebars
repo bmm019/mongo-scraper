@@ -1,0 +1,38 @@
+{{! Nav Bar }}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Mongo-Scraper</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="/saved">Saved Articles</a>
+      <button type="button" class="btn btn-primary" id="scrape">Scrape Articles</button>
+      {{!-- <a class="nav-item nav-link" href="/clearall">Clear Articles</a> --}}
+    </div>
+  </div>
+</nav>
+
+{{! Main Header Image }}
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Mongo-Scraper</h1>
+    <p class="lead">Dogtime News</p>
+  </div>
+</div>
+
+{{! Articles }}
+<div class="articles">
+    <div class="load"></div>
+    {{#each articles }}
+        {{#unless saved}}
+        <div class="article">
+            <a href="{{link}}"><h2>{{title}}</h2></a>
+            <p>{{summary}}</p>
+            <button class="btn btn-primary save" data-id="{{_id}}">SAVE</button>
+            <br>
+        </div>
+        {{/unless}}
+    {{/each}}
+</div>
