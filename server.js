@@ -12,7 +12,7 @@ var cheerio = require("cheerio");
 var db = require("./models");
 
 // Initializing the port
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 
 // Initializing Express
 var app = express();
@@ -28,10 +28,8 @@ var app = express();
 
 // Using Handlebars
 var exphbs = require("express-handlebars");
-app.engine("handlebars", exphbs({
-    defaultLayout: "main",
-    partialsDir: path.join(__dirname, "/views/layouts/partials")
-}));
+//set up handlebars
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // Connecting to the Mongo DB
@@ -123,7 +121,7 @@ app.post("/save/:id", function(req, res) {
   app.get('/getNotes/:id', function (req,res){
     db.Article
       .findOne({ _id: req.params.id })
-      .populate('note')
+      .populate('notes')
       .then(function(dbArticle){
         res.json(dbArticle);
       })
