@@ -1,5 +1,10 @@
-body {
-    background-image: url("./img/bg.jpg");
+.jumbotron {
+    background-image: url("../images/image.jpg");
+    background-size: cover;
+    height: 25rem;
+}
+.container {
+    margin-top: 5rem;
 }
 
 .navbar-brand {
@@ -44,13 +49,11 @@ body {
 
 /*MODAL*/
 .modal-content {
-  background-color: orange;
+  background-color: #f9f9f9;
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-attachment: fixed; */
   background-position: center 12%;
   border-radius: 0;
-  /* font-family: 'Rock Salt', cursive; */
   color: #777;
 
 }

@@ -1,5 +1,5 @@
 //Click to scrape
-$(document).on("click", ".scrape", function(){
+$(document).on("click", "#scrape", function(){
     $.get( "/scrape", function (req, res) {
         console.log(res);
     }).then(function(data) {
