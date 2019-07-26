@@ -1,5 +1,5 @@
 .jumbotron {
-    background-image: url("../images/image.jpg");
+    background-image: url("./assets/images/happy.jpg");
     background-size: cover;
     height: 25rem;
 }
@@ -20,6 +20,32 @@
   margin: 0 2px;
 }
 
+#scrape{
+    background-color: #99b19c;
+}
+
+.btn-primary{
+    border: none;
+    background-color:#99b19c;
+}
+
+button:focus{
+    outline:none;
+}
+
+.btn:focus{
+    box-shadow:none;
+    outline:none;
+}
+
+.save{
+    background-color: #99b19c;
+}
+
+.btn-primary:hover{
+    background-color: #99b19c;
+    border:none;
+}
 .article {
   margin: 3% 5%;
 }
