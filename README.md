@@ -4,7 +4,6 @@ Mongo-Scraper is a dog news application that scrapes and displays articles from 
 
 # Demo 
 [View Demo](https://stormy-beyond-78297.herokuapp.com/)
-
 <br />
 
 # Technology Used

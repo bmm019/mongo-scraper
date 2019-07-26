@@ -1,5 +1,5 @@
 .jumbotron {
-    background-image: url("./assets/images/happy.jpg");
+    background-image: url("../images/ha.jpg");
     background-size: cover;
     height: 25rem;
 }
@@ -7,7 +7,7 @@
     margin-top: 5rem;
 }
 
-.navbar-brand {
+/* .navbar-brand {
   font-size: xx-large;
 }
 
@@ -18,7 +18,7 @@
 
 .top-buttons li {
   margin: 0 2px;
-}
+} */
 
 #scrape{
     background-color: #99b19c;
@@ -47,26 +47,23 @@ button:focus{
     border:none;
 }
 .article {
-  margin: 3% 5%;
+  margin: 1% 5%;
 }
 
-.article img {
-  box-shadow: 5px 5px 12px rgb(78, 78, 78);
-}
 
 .article h2 {
-  color: rgb(59, 59, 59);
+  color: #99b19c;
   font-weight: bolder;
 }
 
 .article p {
-  color: rgb(63, 22, 22);
+  color: #696464;
   font-weight: bold;
 }
 
 .load {
-  display: flex;
-	flex-direction: row;
+    display: flex;
+    flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
@@ -74,6 +71,15 @@ button:focus{
 }
 
 /*MODAL*/
+.btn{
+    background-color: #99b19c;
+    color:white;
+}
+
+h2{
+    color: #99b19c;
+    font-size: 1.5em;
+}
 .modal-content {
   background-color: #f9f9f9;
   background-repeat: no-repeat;
